@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+	backgroung-color: gray;
+	display: flex;
+	flex-direction: colunm;
+	justfy-content: center;
+	align-itens: center;
+}
+header{
+	text-align: center;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	heigth: 2em;	
+}
+section{
+	dispay: flex;
+	flex-direction: column;
+	justfycontent: center;
+	align-itens: center;
+}
+#descricao_da_receita{
+	width: 15em;
+	heigth: auto;
+}
+#ingrediente h2{
+	text-align: center;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	display: flex;
+	flex-direction: row;
+	justfy-content: center;
+	aling-itens: center;
+}
