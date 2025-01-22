@@ -1,40 +1,164 @@
 body{
 	margin: 0;
 	padding: 0;
-	backgroung-color: gray;
+	background: linear-gradient(#ada293, #e4ebab, #ada293);
 	display: flex;
-	flex-direction: colunm;
-	justfy-content: center;
-	align-itens: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 header{
 	text-align: center;
 }
 nav{
+	margin: 2em;
 	display: flex;
 	flex-direction: row;
-	width: 100vw;
-	heigth: 2em;	
+	justify-content: space-between;
+	align-items: center;
+	width: 20vw;
+	height: 2em;
+}
+nav button{
+	width: 10em;
+	height: 2em;
+	background-color: transparent;
+}
+nav button a{
+	text-decoration: none;
+	color:black;
 }
 section{
-	dispay: flex;
+	background-color: #30303030;
+	display: flex;
 	flex-direction: column;
-	justfycontent: center;
-	align-itens: center;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+}
+#receita_do_dia{
+	border-radius: 8px;
+	background-image: url(https://static.itdg.com.br/images/640-400/c327fd42180cc8e319553efbbf01fae2/shutterstock-2221892785-1-.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-x: center;
+	background-position-y: bottom;
+	box-shadow: 0 4px 8px #ffffff1a;
+	border: 0.5em solid #30303030;
+	width: 640px;
+	height: 400px;
 }
 #descricao_da_receita{
-	width: 15em;
-	heigth: auto;
+	width: 40em;
+	height: auto;
 }
-#ingrediente h2{
+#Ingredientes{
+	background-color: #30303030;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#Ingredientes h2{
 	text-align: center;
 }
 ul{
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 ul li{
 	display: flex;
 	flex-direction: row;
-	justfy-content: center;
-	aling-itens: center;
+	justify-content: left;
+	align-items: center;
+}
+.imagem_ingredientes{
+	padding: 1em;
+}
+#passo_a_passo{
+	background-color: #30303030;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 8px;
+}
+iframe{
+	border-radius: 8px;
+	margin: 1em;
+	width: 35rem;
+	box-shadow: 0em 0.5em 1.5em black;
+}
+#passo_a_passo h2{
+	text-align: center;
+}
+#feedback{
+	transition: 0.3s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border-radius: 8px;
+}
+#feedback form{
+	padding: 4em 1em;
+	background-color: #30303030;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	height: 18em;
+}
+form input, form textarea, form div, #enviar{
+	width: 20em;
+	height: 2em;
+	margin: 0.2em;
+}
+form{
+	border-radius: 8px;
+}
+#avaliacao{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.estrela{
+	transition: 0.3s;
+}
+.star{
+	cursor: pointer;
+	height: 2em;
+	width: 2.2em;
+	padding: 0.2em;
+	margin: 0;
+}
+.star p {
+	margin: 0;
+	padding: 0;
+	font-size: 25pt;
+}
+#quant{
+	text-align: center;
+	margin: 0;
+}
+#menu_feed{
+	padding: 0 2em;
+	gap: 2em;
+}
+p{
+	font-size: 15pt;
+}
+footer{
+	height: 15em;
+}
+textarea{
+	max-width: 20em;
+	min-width: 20em;
+	max-height: 5em;
+}
+#feedback:hover{
+	scale: 1.1;
+	margin: 2em 0;
 }
